@@ -67,3 +67,6 @@ export interface TsMapHelper {
     dataType: string;
     value: Array<Object>;
 }
+
+export const getProfile = (): "local" | "prod" => Deno.env.get("profile") != null ?
+    Deno.env.get("profile") === "prod" ? "prod" : "local" : "local";

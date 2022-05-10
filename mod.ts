@@ -65,5 +65,5 @@ export interface Vote {
 
 export interface TsMapHelper {
     dataType: string;
-    value: Array<unknown>;
+    value: Array<Object>;
 }
